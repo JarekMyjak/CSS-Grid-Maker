@@ -1,0 +1,25 @@
+.gridParent{
+    width: 1200px;
+    height: 35rem;
+    display: grid;
+    grid-template-columns: repeat(12,auto);
+    grid-template-areas: "aaa aaa aaa",
+                         "aaaa aaa aaa";
+    background-color: red;
+}
+.gridItem{
+    
+}
+
+.ds-selected {
+    outline: 1px solid black;
+    outline-offset: 0px;
+    color: black;
+    font-weight: bold;
+  }
+.output {
+    width: 800px;
+    height:400px;
+    resize: none;
+    outline: none;
+}

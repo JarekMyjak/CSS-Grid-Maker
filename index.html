@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- <link rel="stylesheet" href="Normalize.css"> -->
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="Skeleton.css"> -->
+    <title>gridMaker</title>
+</head>
+<body>
+    <input type="text" name="nameIn" id="nameIn" style="position:absolute; left: 45vw; top: 50vh; z-index: 2; visibility: hidden;" autofocus> 
+    <div class="frame">
+        <div class="header">
+            <form action="">
+                <input type="range" name="resolutionW" id="resW" min="2" max="12">
+                <label for="resolutionW">width</label>
+                <input type="range" name="resolutionH" id="resH" min="2" max="8">
+                <label for="resolutionH">Height</label>
+            </form>
+        </div>
+    
+        <div class="maker">
+            <div class="gridParent" id="gridParent">
+                
+            </div>
+        </div>
+        <br>
+        <div class="outputContainer" id="outputContainer">
+            <textarea readonly class="output" id="output" >
+            </textarea>
+        </div>
+    </div>
+</body>
+
+<script src="https://thibaultjanbeyer.github.io/DragSelect/ds.min.js"></script>
+<script src="script.js"></script>
+</html>
